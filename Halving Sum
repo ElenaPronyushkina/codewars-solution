@@ -1,0 +1,11 @@
+// https://www.codewars.com/kata/5a58d46cfd56cb4e8600009d
+
+function halvingSum(n){
+  let i = n;
+  let sum = n;
+  do {
+    i = Math.floor(i / 2)
+    sum = sum + i;
+  } while (i > 1);
+  return sum;
+}
