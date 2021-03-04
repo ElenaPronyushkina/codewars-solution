@@ -1,0 +1,8 @@
+// https://www.codewars.com/kata/574c5075d27783851800169e
+
+function animals(heads, legs){
+  let chik = heads - (legs - heads * 2) / 2;
+  let cow = heads - chik;
+    if (chik < 0 || cow < 0 || legs % 2 !== 0 || heads > legs/2) return 'No solutions'; 
+  return [chik, cow];
+}
