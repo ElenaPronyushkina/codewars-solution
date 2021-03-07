@@ -1,0 +1,13 @@
+// https://www.codewars.com/kata/557341907fbf439911000022/train/javascript
+
+function pattern(n){
+  let output = "";
+  for (let i = n; i >= 1; i--) {
+    let s = '';
+    for (let j = n; j >= i; j--){
+      s += j
+    }
+    output += s + '\n';
+  }
+ return output.trim();
+}
