@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript
+
+function digital_root(n) {
+  while (n > 9){
+    let sum = 0;
+    let str = n +'';
+    for (let i = 0; i < str.length; i++){
+      sum += +str[i];
+    }
+    n = sum;
+  }
+   return n;
+}
