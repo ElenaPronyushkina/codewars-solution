@@ -1,0 +1,11 @@
+// https://www.codewars.com/kata/58f8b35fda19c0c79400020f
+
+function allNonConsecutive (arr) {
+  let res = [];
+  for (let j = 0; j < arr.length-1; j++){
+    if (Math.abs(arr[j] - arr[j + 1]) !== 1) {
+      res.push({i: j + 1, n: arr[j + 1]});
+    } 
+  }
+  return res;
+}
