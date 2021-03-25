@@ -1,0 +1,10 @@
+//https://www.codewars.com/kata/5a090c4e697598d0b9000004
+
+function solve(arr){
+  let res = [];
+  arr = arr.sort((a, b) => b - a);
+  for (let i = 0; i < arr.length/2; i++){
+    res.push(arr[i], arr[arr.length - 1 - i])
+  }
+  return res.filter((el, i) => i === res.indexOf(el));
+};
