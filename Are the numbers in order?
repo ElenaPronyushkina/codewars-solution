@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/56b7f2f3f18876033f000307
+
+function inAscOrder(arr) {
+  let arr1 = arr.concat().sort((a, b) => a - b);
+  return arr.every((el, i) => i === arr1.indexOf(el))
+}
