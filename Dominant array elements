@@ -1,0 +1,16 @@
+//https://www.codewars.com/kata/5a04133e32b8b998dc000089
+
+function solve(arr){
+  let res = [arr[arr.length-1]]
+  for (let i = arr.length - 2; i >= 0; i--){
+    if (arr[i] > Math.max(...arr.slice(i+1))) res.unshift(arr[i])
+  }
+  return res;
+};
+
+
+
+
+function solve(arr){
+  return arr.filter((el ,i)=> arr.slice(i+1).every(x => x < el));
+};
