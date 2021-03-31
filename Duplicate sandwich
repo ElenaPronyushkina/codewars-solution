@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/5f8a15c06dbd530016be0c19
+
+function duplicateSandwich(a) {
+  let flag = 0;
+  if (typeof a === 'string') {a = a.split('');
+                              flag = 1}
+  let arr = a.filter(el => a.indexOf(el) !== a.lastIndexOf(el));
+  let fir = a.indexOf(arr[0]);
+  let sec = a.lastIndexOf(arr[0]);
+  return (flag === 1) ? a.slice(fir + 1, sec).join('') : a.slice(fir + 1, sec);
+}
