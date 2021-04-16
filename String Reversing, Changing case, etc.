@@ -1,0 +1,8 @@
+//
+
+function reverseAndMirror(s1,s2) {
+  let revs2 = s2.split('').reverse().map(el => (el === el.toLowerCase()) ? el.toUpperCase() : el.toLowerCase()).join('');
+  s1 = s1.split('').reverse().map(el => (el === el.toLowerCase()) ? el.toUpperCase() : el.toLowerCase()).join('');
+  let revs1 = s1.split('').reverse().join('');
+  return revs2 + '@@@' + s1 + revs1;
+}
