@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/5b4e474305f04bea11000148
+
+function digits(num){
+  num = (num + '').split('').map(el => +el);
+  let res = [];
+  for (let i = 0; i < num.length; i++){
+    for (let j = i + 1; j < num.length; j++){
+      res.push(num[i] + num[j])
+    }
+  }
+  return res;
+}
