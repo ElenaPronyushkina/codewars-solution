@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/565ce4ab24ef4aee6a000074
+
+function isMatching(string, str1, str2) {
+  let merge = (str1 + str2).toLowerCase().split('').sort().join('').trim()
+  let str = string.toLowerCase().split('').sort().join('').trim()
+  return merge === str
+}
