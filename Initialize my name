@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/5768a693a3205e1cc100071f
+
+function initializeNames(name){
+  name = name.split(' ');
+  return name.map((el, i) => (i === 0 || i === name.length - 1) ? el : el[0] + '.').join(' ')
+}
