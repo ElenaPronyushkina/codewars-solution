@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/525f039017c7cd0e1a000a26
+
+var palindromeChainLength = function(n) {
+  let pol = (n +'').split('').reverse().join('')
+  let count = 0;
+  while (pol !== n + ''){
+    n = n + +pol;
+    pol = (n +'').split('').reverse().join('')
+    count++;
+  }
+  return count;
+};
