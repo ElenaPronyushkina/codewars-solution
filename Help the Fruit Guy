@@ -1,0 +1,5 @@
+//https://www.codewars.com/kata/557af4c6169ac832300000ba
+
+function removeRotten(bag){
+  return bag ? bag.map(x=>x.toLowerCase().replace(/rotten/ig,"")) : [];
+}
