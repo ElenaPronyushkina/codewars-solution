@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/563e320cee5dddcf77000158/solutions/javascript
+
+function getAverage(marks){
+  return Math.floor(marks.reduce((a, b) => a + b) / marks.length)
+}
+
+
+function getAverage(marks){
+  let avg = 0;
+  for (let i = 0; i < marks.length; i ++){
+    avg += marks[i];
+  }
+  return Math.floor(avg / marks.length);
+}
