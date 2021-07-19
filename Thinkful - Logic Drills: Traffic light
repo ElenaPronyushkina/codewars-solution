@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/58649884a1659ed6cb000072/solutions/javascript
+
+function updateLight(current) {
+  let obj = {
+    green: 'yellow',
+    yellow: 'red',
+    red: 'green'
+  }
+  return obj[current]
+}
+
+
+
+function updateLight(current) {
+  if (current === 'green') return "yellow"
+  else if (current === "yellow") return "red"
+  else return 'green';
+}
